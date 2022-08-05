@@ -1,5 +1,6 @@
 module "solution" {
-  source = "../aztfmod"
+  #source = "../aztfmod"
+  source = "git::https://github.com/Matze-Li/terraform-azurerm-caf.git?ref=int-5.6.0-patch"
 
   providers = {
     azurerm.vhub = azurerm.vhub
